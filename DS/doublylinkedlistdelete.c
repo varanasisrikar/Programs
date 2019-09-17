@@ -1,155 +1,108 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 struct node
 {
-        char name[10],des[10];
-        int age;
-        float salary;
-        struct node* preptr;
-        struct node* nextptr;
-}*stnode, *ennode;
+    int id;
+    char name[10];
+    struct node *next;
+    struct node *prev;
+};
 
-struct node *head,*tail=NULL;
-struct node* createnode(struct node* );
-void display(struct node*);
-struct node* DlListDeleteAnyNode(int k);
-int n;
+void deletenode(struct node *, int );
+
 int main()
 {
-
-        int b,i;
-        char ename[10];
-
-
-        printf("Enter No.of employees\n");
-        scanf("%d",&n);
-        for(i=1; i<=n; i++)
+    struct node *head = NULL;
+    while (1)
+    {
+        struct node *temp = (struct node *)malloc(sizeof(struct node));
+        if (temp == NULL)
         {
-                head=createnode(head);
-                if(i==1) {
-                        tail=head;
-                }
+            return 1;
         }
-        printf("before delete\n");
-        display(head);
-        printf("enter name of emp to delete\n");
-        scanf("%s", ename);
-        struct node *p;
-        int j=1;
-        for(p=head; p!=NULL; p=p->nextptr)
-         {
-                if(strcmp(p->name,ename)!=0)
-                {
-                  j++;
-                }
-                else
-                {
-                  break;
-                }
-        }
-        if(j<=n)
-         {
-               head=DlListDeleteAnyNode(j);
-                if(head!=NULL)
-                {
-                        printf("after delete\n");
-                        display(head);
-                }
-        }
-        else
-                printf("Name is not in the list\n");
-}
-struct node* createnode(struct node* h)
-{
+        int n;
 
-        stnode=(struct node*)malloc(sizeof (struct node));
-        printf("Enter employee name\n");
-        scanf("%s",stnode->name);
-        printf("Enter employee's designation\n");
-        scanf("%s",stnode->des);
-        printf("Enter salary of employee\n");
-        scanf("%f",&stnode->salary);
-        printf("Enter the age of employee\n");
-        scanf("%d",&stnode->age);
-        if(head == NULL)
+        printf("Enter id: ");
+        scanf("%d", &n);
+        if (n == -1)
         {
-                stnode->preptr=NULL;
-                stnode->nextptr=NULL;
-                head=stnode;
+            break;
+        }
+        temp->id = n;
+        printf("Enter name: ");
+        scanf("%s", temp->name);
+        temp->next = NULL;
+        temp->prev = NULL;
+
+        if (head == NULL)
+        {
+            head = temp;
         }
         else
         {
-                stnode->preptr=NULL;
-                stnode->nextptr=head;
-                head->preptr=stnode;
-                head=stnode;
-        
-        return stnode;
+            temp->next = head;
+            temp->next->prev = temp;
+            head = temp;
+        }
+    }
+    printf("\n\n");
+    int n = 0;
+    printf("Enter id to delete: ");
+    scanf("%d", &n);
+    deletenode(head, n);
 }
 
-struct node* DlListDeleteAnyNode(int k)
+
+void deletenode(struct node *head, int pos)
 {
+    int flag = 0;
+   struct node *delptr = head;
+    if (delptr->id == pos)
+    {
 
-        struct node *tp,*p,*tmp,*pre,*curr;
-        int i;
+        head = delptr->next;
+        delptr->next->prev = NULL;
+        free(delptr);
+        flag =1;
+    }
+    else
+    {
 
-        if(k==1)
+        while((delptr->next != NULL) && (delptr->next->id != pos))
         {
-                if(head!=NULL)
-                {
-                        tp=head;
-                        head=head->nextptr;
-                        if(head!=NULL)
-                        {
-                                head->preptr=NULL;
-                        }
-                }
-        }
-        else if(k==n)
-        {
-                tmp=tail;
-                tail=tail->preptr;
-                free(tmp);
-                if(tail!=NULL) {tail->nextptr=NULL;}
-        }
-        else
-        {
-                int a,b;
-                pre=head;
-                curr=head->nextptr;
-                if(k!=1)
-                {
-                        for(a=1; a<k-1; a++)
-                        {
-                                curr=curr->nextptr;
-                                pre=pre->nextptr;
-                        }
-                        pre->nextptr=curr->nextptr;
-                        curr->nextptr->preptr=pre;
-                        free(curr);
-                }
-        }
-        return head;
-}
+            delptr = delptr->next;
 
-void display(struct node* sptr)
-{
-        sptr=head;
-        if(sptr==NULL)
-        {
-                printf("The node is not created\n");
         }
+        if (delptr->next != NULL)
+        {
+            struct node *tptr = delptr->next;
+            if (tptr->next == NULL)
+            {
+                delptr->next = NULL;
+                free(tptr);
+                flag = 1;
+            }
+            else
+            {
+                delptr->next = delptr->next->next;
+                delptr->next->next->prev = delptr;
+                free(tptr);
+                flag = 1;}
 
-        else
+            }
+       }
+
+    if (flag == 0)
+    {
+        printf("Id not found\n");
+    }
+    else
+    {
+        for (struct node *disptr = head; disptr != NULL; disptr = disptr->next)
         {
-                while(sptr!=NULL)
-                {
-                        printf("The name of employee %s\n",sptr->name);
-                        printf("The designation of employee %s\n",sptr->des);
-                        printf("The salary of employee %f\n",sptr->salary);
-                        printf("The age of employee %d\n",sptr->age);
-                        sptr=sptr->nextptr;
-                }
+            printf("ID: %d\n", disptr->id);
+            printf("NAME: %s\n", disptr->name);
         }
+    }
 }
