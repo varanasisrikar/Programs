@@ -8,13 +8,14 @@ typedef struct queue
 								char sname[20];
 								int tmarks;
 								struct queue* next;
-}queue;
+} queue;
 struct queue* front=NULL;
 struct queue* rear=NULL;
+struct queue* q;
 
 void enqueue(int no,char name[],int marks)
 {
-								struct queue q*=(struct queue*)malloc(sizeof(queue));
+								q=(struct queue*)malloc(sizeof(queue));
 								q->sno=no;
 								strcpy(q->sname,name);
 								q->tmarks=marks;

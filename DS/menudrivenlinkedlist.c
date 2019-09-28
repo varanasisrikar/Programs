@@ -15,7 +15,7 @@ struct node
         int info;
         struct node *next;
 };
-struct node *start=NULL;
+struct node *head=NULL;
 
 int main()
 {
@@ -85,13 +85,13 @@ void create()
         printf("\nEnter the data value for the node:\t");
         scanf("%d",&temp->info);
         temp->next=NULL;
-        if(start==NULL)
+        if(head==NULL)
         {
-                start=temp;
+                head=temp;
         }
         else
         {
-                ptr=start;
+                ptr=head;
                 while(ptr->next!=NULL)
                 {
                         ptr=ptr->next;
@@ -103,14 +103,14 @@ void create()
 void display()
 {
         struct node *ptr;
-        if(start==NULL)
+        if(head==NULL)
         {
                 printf("\nList is empty:\n");
                 return;
         }
         else
         {
-                ptr=start;
+                ptr=head;
                 printf("\nThe List elements are:\n");
                 while(ptr!=NULL)
                 {
@@ -132,14 +132,14 @@ void insert_begin()
         printf("\nEnter the data value for the node:\t" );
         scanf("%d",&temp->info);
         temp->next =NULL;
-        if(start==NULL)
+        if(head==NULL)
         {
-                start=temp;
+                head=temp;
         }
         else
         {
-                temp->next=start;
-                start=temp;
+                temp->next=head;
+                head=temp;
         }
 }
 
@@ -155,13 +155,13 @@ void insert_end()
         printf("\nEnter the data value for the node:\t" );
         scanf("%d",&temp->info );
         temp->next =NULL;
-        if(start==NULL)
+        if(head==NULL)
         {
-                start=temp;
+                head=temp;
         }
         else
         {
-                ptr=start;
+                ptr=head;
                 while(ptr->next !=NULL)
                 {
                         ptr=ptr->next;
@@ -188,12 +188,12 @@ void insert_pos()
         temp->next=NULL;
         if(pos==0)
         {
-                temp->next=start;
-                start=temp;
+                temp->next=head;
+                head=temp;
         }
         else
         {
-                for(i=0,ptr=start; i<pos-1; i++)
+                for(i=0,ptr=head; i<pos-1; i++)
                 {
                         ptr=ptr->next;
                         if(ptr==NULL)
@@ -209,7 +209,7 @@ void insert_pos()
 
 void delete_begin()
 {
-        struct node *ptr;
+        struct node *ptr=head;
         if(ptr==NULL)
         {
                 printf("\nList is Empty:\n");
@@ -217,8 +217,7 @@ void delete_begin()
         }
         else
         {
-                ptr=start;
-                start=start->next;
+                head=head->next;
                 printf("\nThe deleted element is :%d\t",ptr->info);
                 free(ptr);
         }
@@ -227,21 +226,21 @@ void delete_begin()
 void delete_end()
 {
         struct node *temp,*ptr;
-        if(start==NULL)
+        if(head==NULL)
         {
                 printf("\nList is Empty:");
                 exit(0);
         }
-        else if(start->next ==NULL)
+        else if(head->next ==NULL)
         {
-                ptr=start;
-                start=NULL;
+                ptr=head;
+                head=NULL;
                 printf("\nThe deleted element is:%d\t",ptr->info);
                 free(ptr);
         }
         else
         {
-                ptr=start;
+                ptr=head;
                 while(ptr->next!=NULL)
                 {
                         temp=ptr;
@@ -257,7 +256,7 @@ void delete_pos()
 {
         int i,pos;
         struct node *temp,*ptr;
-        if(start==NULL)
+        if(head==NULL)
         {
                 printf("\nThe List is Empty:\n");
                 exit(0);
@@ -268,14 +267,14 @@ void delete_pos()
                 scanf("%d",&pos);
                 if(pos==0)
                 {
-                        ptr=start;
-                        start=start->next;
+                        ptr=head;
+                        head=head->next;
                         printf("\nThe deleted element is:%d\t",ptr->info  );
                         free(ptr);
                 }
                 else
                 {
-                        ptr=start;
+                        ptr=head;
                         for(i=0; i<pos; i++)
                         {
                                 temp=ptr;

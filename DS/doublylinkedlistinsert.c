@@ -3,70 +3,72 @@
 
 struct node
 {
-    int id;
-    char name[10];
-    struct node *next;
-    struct node *prev;
+        int id;
+        char name[10];
+        struct node *next;
+        struct node *prev;
 
 };
 void Insert(struct node *, int);
 int main()
 {
-    int n;
-    struct node *head = NULL;
-    int count = 0;
-    while(1)
-    {
-        printf("Enter id: ");
-        scanf("%d", &n);
-        if(n == -1)
+        int i,n=0;
+        printf("Enter no of elements\n");
+        scanf("%d",&i);
+        struct node *head = NULL;
+        int count = 0;
+        while(n<i)
         {
-            break;
+                printf("Enter id: ");
+                scanf("%d", &n);
+                if(n == -1)
+                {
+                        break;
+                }
+                count++;
+                struct node *temp = (struct node *)malloc(sizeof(struct node));
+
+                if (temp == NULL)
+                {
+                        return 1;
+                }
+
+                temp->id = n;
+                printf("Enter name: ");
+                scanf("%s", temp->name);
+                temp->next = NULL;
+                temp->prev = NULL;
+
+                if (head == NULL)
+                {
+                        head = temp;
+                }
+                else
+                {
+                        temp->next = head;
+                        temp->next->prev = temp;
+                        head = temp;
+                }
         }
-        count++;
-        struct node *temp = (struct node *)malloc(sizeof(struct node));
-
-        if (temp == NULL)
+        int pos = 0;
+        printf("Enter pos to insert: ");
+        scanf("%d", &pos);
+        if (pos == 1 || pos == count)
         {
-            return 1;
-        }
-
-        temp->id = n;
-        printf("Enter name: ");
-        scanf("%s", temp->name);
-        temp->next = NULL;
-        temp->prev = NULL;
-
-        if (head == NULL)
-        {
-            head = temp;
+                printf("Cannot INSERT\n");
         }
         else
         {
-            temp->next = head;
-            temp->next->prev = temp;
-            head = temp;
+                Insert(head,pos);
         }
-    }
-    int pos = 0;
-    printf("Enter pos to insert: ");
-    scanf("%d", &pos);
-    if (pos == 1 || pos == count)
-    {
-        printf("Cannot INSERT\n");
-    }
-    else
-    {
-        Insert(head,pos);
-    }
 }
 
 void Insert(struct node *head, int n)
 {
-    struct node *insptr = (struct node *)malloc(sizeof(struct node));
-    if (insptr == NULL)
+        struct node *insptr = (struct node *)malloc(sizeof(struct node));
+        if (insptr == NULL)
         {
-            return 1;
+                printf("Null can't be inserted");
         }
         printf("Enter id: ");
         scanf("%d", &insptr->id );
@@ -79,8 +81,8 @@ void Insert(struct node *head, int n)
 
         while(i<n-1)
         {
-            ptr = ptr->next;
-            i++;
+                ptr = ptr->next;
+                i++;
         }
         struct node *tptr = ptr->next;
         ptr->next = insptr;
@@ -88,23 +90,9 @@ void Insert(struct node *head, int n)
         insptr->next = tptr;
         tptr->prev = insptr;
 
-    for (struct node *disptr = head;  disptr != NULL; disptr = disptr->next)
-    {
-        printf("ID: %d\n", disptr->id);
-        printf("Name: %s\n", disptr->name);
-    }
+        for (struct node *disptr = head; disptr != NULL; disptr = disptr->next)
+        {
+                printf("ID: %d\n", disptr->id);
+                printf("Name: %s\n", disptr->name);
+        }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

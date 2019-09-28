@@ -15,10 +15,11 @@ struct node* createnode(struct node* );
 void display(struct node*);
 struct node* DlListDeleteAnyNode(int k);
 int n;
+
 int main()
 {
 
-        int b,i;
+        int i;
         char ename[10];
 
 
@@ -38,19 +39,19 @@ int main()
         struct node *p;
         int j=1;
         for(p=head; p!=NULL; p=p->nextptr)
-         {
+        {
                 if(strcmp(p->name,ename)!=0)
                 {
-                  j++;
+                        j++;
                 }
                 else
                 {
-                  break;
+                        break;
                 }
         }
         if(j<=n)
-         {
-               head=DlListDeleteAnyNode(j);
+        {
+                head=DlListDeleteAnyNode(j);
                 if(head!=NULL)
                 {
                         printf("after delete\n");
@@ -84,12 +85,12 @@ struct node* createnode(struct node* h)
                 stnode->nextptr=head;
                 head->preptr=stnode;
                 head=stnode;
-        
+        }
+
         return stnode;
 }
 
-struct node* DlListDeleteAnyNode(int k)
-{
+struct node* DlListDeleteAnyNode(int k){
 
         struct node *tp,*p,*tmp,*pre,*curr;
         int i;
