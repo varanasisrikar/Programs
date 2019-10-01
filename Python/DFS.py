@@ -3,17 +3,18 @@ from collections import defaultdict
 
 class Graph:
     def __init__(self):
-        self.Graph = defaultdict(list)
+        self.graph = defaultdict(list)
 
     def addEdge(self, u, v):
-        self.Graph[u].append(v)
+        self.graph[u].append(v)
 
     def DFSUtil(self, v, visited):
-        visited[v] = True
-        print(v, end='')
-        for i in self, Graph[v]:
-            if visited[i] == False:
-                self.DFSUtil(i, visited)
+        if not visited[v]:
+            visited[v] = True
+            print(v, end=' ')
+            for i in self.graph:
+                if not visited[i]:
+                    self.DFSUtil(i, visited)
 
     def DFS(self, v):
         visited = [False] * (len(self.graph))
@@ -27,5 +28,5 @@ g.addEdge(1, 2)
 g.addEdge(2, 0)
 g.addEdge(2, 3)
 g.addEdge(3, 3)
-print("DFS from (starting from vertex 2)")
+print("DFS")
 g.DFS(2)
