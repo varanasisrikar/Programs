@@ -4,21 +4,21 @@ int any(char s1[], char s2[]);
 
 int main()
 {
-	printf("%d\n", any("Hello, world!", "d,!"));
+								printf("%d\n", any("Hello, world!", "d,!"));
 
-	return 0;
+								return 0;
 }
 
 int any(char s1[], char s2[])
 {
-	int i, j;
+								int i, j;
 
-	for (i = 0; s1[i] != '\0'; i++) {
-		for (j = 0; s2[j] != '\0'; j++) {
-			if (s1[i] == s2[j])
-				return i;
-		}
-	}
+								for (i = 0; s1[i] != '\0'; i++) {
+																for (j = 0; s2[j] != '\0'; j++) {
+																								if (s1[i] == s2[j])
+																																return i;
+																}
+								}
 
-	return -1;
+								return -1;
 }
