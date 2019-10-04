@@ -1,6 +1,5 @@
 for letter in 'Python':
-    print('Current Letter:',letter)
-    if (letter=='h'):
+    print('Current Letter:', letter)
+    if (letter == 'h'):
         break
-print('Current Letter:',letter)
-    
+print('Current Letter:', letter)

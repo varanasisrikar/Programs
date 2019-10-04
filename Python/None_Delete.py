@@ -1,6 +1,6 @@
-a=1
+a = 1
 a
 1
-a=None
+a = None
 a
 del a
