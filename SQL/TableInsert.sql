@@ -1,4 +1,3 @@
-drop database db;
 create database db;
 use db;
 create table student(rno integer, name varchar(10), email varchar(30),address varchar(30), phoneno bigint);
