@@ -14,9 +14,9 @@ class Derived extends Base
 }
 class test
 {
-  public static void main(String[] args)
+  public static void main(final String[] args)
   {
-    Base obj=new Derived();
+    final Base obj=new Derived();
     obj.m1();
   }
 }
