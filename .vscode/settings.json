@@ -1,6 +1,17 @@
 {
     "editor.fontFamily": "Raleway, 'Raleway', monospace",
     "editor.fontSize": 16,
-    "files.autoSave": "onWindowChange"
+    "files.autoSave": "onWindowChange",
+    "sqltools.connections": [
+        {
+            "database": "db",
+            "dialect": "MySQL",
+            "name": "localhost",
+            "password": "MySQL",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
     
 }
