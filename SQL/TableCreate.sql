@@ -10,4 +10,4 @@ create table empc(empno integer(4) primary key,
   omm decimal(10,2),
   deptno integer(2)
 );
-desc empc;
+DESCRIPTION empc;
