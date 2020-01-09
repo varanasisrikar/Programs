@@ -1,12 +1,12 @@
 #include <fcntl.h>
 #include "stdio-field.h"
-#define PERMS 0666	/* RW for owner, group, others */
+#define PERMS 0666 /* RW for owner, group, others */
 
-FILE _iob[OPEN_MAX] = {	/* stdin, stdout, stderr: */
-	{ 0, (char *) 0, (char *) 0, 1, 0, 0, 0, 0, 0 },
-	{ 0, (char *) 0, (char *) 0, 0, 1, 0, 0, 0, 1 },
-	{ 0, (char *) 0, (char *) 0, 0, 1, 1, 0, 0, 2 }
-};
+FILE _iob[OPEN_MAX] =
+	{/* stdin, stdout, stderr: */
+	 {0, (char *)0, (char *)0, 1, 0, 0, 0, 0, 0},
+	 {0, (char *)0, (char *)0, 0, 1, 0, 0, 0, 1},
+	 {0, (char *)0, (char *)0, 0, 1, 1, 0, 0, 2}};
 
 /* fopen:  open file, return file ptr */
 FILE *fopen(char *name, char *mode)
@@ -18,19 +18,21 @@ FILE *fopen(char *name, char *mode)
 		return NULL;
 	for (fp = _iob; fp < _iob + OPEN_MAX; fp++)
 		if (!(fp->read || fp->write))
-			break;	/* found free slot */
-	if (fp >= _iob + OPEN_MAX)	/* no free slots */
+			break;			   /* found free slot */
+	if (fp >= _iob + OPEN_MAX) /* no free slots */
 		return NULL;
 
 	if (*mode == 'w')
 		fd = creat(name, PERMS);
-	else if (*mode == 'a') {
+	else if (*mode == 'a')
+	{
 		if ((fd = open(name, O_WRONLY, 0)) == -1)
 			fd = creat(name, PERMS);
 		lseek(fd, 0L, 2);
-	} else
+	}
+	else
 		fd = open(name, O_RDONLY, 0);
-	if (fd == -1)	/* couldn't access name */
+	if (fd == -1) /* couldn't access name */
 		return NULL;
 	fp->fd = fd;
 	fp->cnt = 0;
@@ -50,12 +52,13 @@ int _fillbuf(FILE *fp)
 	if (!fp->read || fp->eof || fp->err)
 		return EOF;
 	bufsize = (fp->unbuf) ? 1 : BUFSIZ;
-	if (fp->base = NULL)	/* no buffer yet */
-		if ((fp->base = (char *) malloc(bufsize)) == NULL)
-			return EOF;		/* can't get buffer */
+	if (fp->base = NULL) /* no buffer yet */
+		if ((fp->base = (char *)malloc(bufsize)) == NULL)
+			return EOF; /* can't get buffer */
 	fp->ptr = fp->base;
 	fp->cnt = read(fp->fd, fp->ptr, bufsize);
-	if (--fp->cnt < 0) {
+	if (--fp->cnt < 0)
+	{
 		if (fp->cnt == -1)
 			fp->eof = 1;
 		else
@@ -63,7 +66,7 @@ int _fillbuf(FILE *fp)
 		fp->cnt = 0;
 		return EOF;
 	}
-	return (unsigned char) *fp->ptr++;
+	return (unsigned char)*fp->ptr++;
 }
 
 /* _flushbuf:  empty buffer to fp */
@@ -74,12 +77,13 @@ int _flushbuf(int c, FILE *fp)
 	if (!fp->write || fp->eof || fp->err)
 		return EOF;
 	bufsize = (fp->unbuf) ? 1 : BUFSIZ;
-	if (fp->base = NULL)	/* no buffer yet */
-		if ((fp->base = (char *) malloc(bufsize)) == NULL)
-			return EOF;		/* can't get buffer */
+	if (fp->base = NULL) /* no buffer yet */
+		if ((fp->base = (char *)malloc(bufsize)) == NULL)
+			return EOF; /* can't get buffer */
 	fp->ptr = fp->base;
 	fp->cnt -= write(fp->fd, fp->ptr, bufsize);
-	if (fp->cnt != 0) {
+	if (fp->cnt != 0)
+	{
 		fp->err = 1;
 		return EOF;
 	}
