@@ -9,7 +9,7 @@ int getline(char s[], int lim);
 /* rudimentary calculator */
 int main()
 {
-	double sum, atof(char []);
+	double sum, atof(char[]);
 	char line[MAXLINE];
 	int getline(char line[], int max);
 
@@ -25,7 +25,7 @@ double atof(char s[])
 	double val, power, exponent;
 	int i, sign, exponent_sign;
 
-	for (i = 0; isspace(s[i]); i++)	/* skip white space */
+	for (i = 0; isspace(s[i]); i++) /* skip white space */
 		;
 	sign = (s[i] == '-') ? -1 : 1;
 	if (s[i] == '+' || s[i] == '-')
@@ -34,11 +34,13 @@ double atof(char s[])
 		val = 10.0 * val + (s[i] - '0');
 	if (s[i] == '.')
 		i++;
-	for (power = 1.0; isdigit(s[i]); i++) {
+	for (power = 1.0; isdigit(s[i]); i++)
+	{
 		val = 10.0 * val + (s[i] - '0');
 		power *= 10.0;
 	}
-	if (s[i] == 'e' || s[i] == 'E') {
+	if (s[i] == 'e' || s[i] == 'E')
+	{
 		i++;
 		exponent_sign = (s[i] == '-') ? -1 : 1;
 		if (s[i] == '+' || s[i] == '-')
@@ -46,7 +48,9 @@ double atof(char s[])
 		for (exponent = 0.0; isdigit(s[i]); i++)
 			exponent = 10.0 * exponent + (s[i] - '0');
 		exponent = exponent_sign * exponent;
-	} else {
+	}
+	else
+	{
 		exponent = 0.0;
 	}
 	power /= pow(10.0, exponent);
@@ -59,7 +63,7 @@ int getline(char s[], int lim)
 	int c, i;
 
 	i = 0;
-	while (--lim > 0 && (c=getchar()) != EOF && c != '\n')
+	while (--lim > 0 && (c = getchar()) != EOF && c != '\n')
 		s[i++] = c;
 	if (c == '\n')
 		s[i++] = c;
