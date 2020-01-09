@@ -18,9 +18,8 @@ void inorder(struct node *root)
         printf("%d ", root->data);
         inorder(root->right_child);
     }
-
 }
-struct node* insert(struct node *root, int x)
+struct node *insert(struct node *root, int x)
 {
     struct node *n = (struct node *)malloc(sizeof(struct node));
     if (n == NULL)
@@ -36,32 +35,32 @@ struct node* insert(struct node *root, int x)
     }
     else
     {
-        if(x>root->data)
+        if (x > root->data)
         {
-            root->right_child = insert(root->right_child,x);
+            root->right_child = insert(root->right_child, x);
         }
         else
         {
-            root->left_child = insert(root->left_child,x);
+            root->left_child = insert(root->left_child, x);
         }
     }
     return root;
-
 }
 
 int main()
 {
-    int n,i,l,r;
-    struct node *root=NULL;
+    int n, i, l, r;
+    struct node *root = NULL;
     printf("Enter no of  nodes \n");
-    scanf("%d",&n);
+    scanf("%d", &n);
     printf("Enter  nodes \n");
-    for(i=1;i<=n;i++){
-    	scanf("%d",&l);
-      root=insert(root,l);
-	}
-  printf("Inorder Traversal\n");
-   inorder(root);
+    for (i = 1; i <= n; i++)
+    {
+        scanf("%d", &l);
+        root = insert(root, l);
+    }
+    printf("Inorder Traversal\n");
+    inorder(root);
     printf("\n");
-       return 0;
+    return 0;
 }

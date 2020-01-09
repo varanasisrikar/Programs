@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-void search(char* pat, char* txt)
+void search(char *pat, char *txt)
 {
         int M = strlen(pat);
         int N = strlen(txt);
 
         /* A loop to slide pat[] one by one */
-        for (int i = 0; i <= N - M; i++) {
+        for (int i = 0; i <= N - M; i++)
+        {
                 int j;
 
                 /* For current index i, check for pattern match */
