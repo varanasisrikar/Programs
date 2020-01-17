@@ -12,6 +12,7 @@
             "server": "localhost",
             "username": "root"
         }
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "Disabled"
     
 }

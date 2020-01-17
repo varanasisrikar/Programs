@@ -1,5 +1,5 @@
 #include <stdio.h>
-float calculatewaitingtime(int process[], int bt[], int at[], int n)
+float calculatewaitingtime(int processes[], int bt[], int at[], int n)
 {
     int i;
     float swt;
@@ -11,17 +11,35 @@ float calculatewaitingtime(int process[], int bt[], int at[], int n)
     }
     for (i = 0; i < n; i++)
     {
-        swt=swt+wt[i];
+        swt = swt + wt[i];
     }
-    float awt=swt/n;
+    float awt = swt / n;
     return awt;
 }
-float calculateturnaroundtime(int process[], int bt[], int wt[], int n)
+float calculateturnaroundtime(int processes[], int bt[], int wt[], int n)
 {
     int i;
+    float stat;
     int tat[n];
     for (i = 0; i < n; i++)
     {
         tat[i] = wt[i] + bt[i];
     }
+    for (i = 0; i < n; i++)
+    {
+        stat = stat + wt[i];
+    }
+    float atat = stat / n;
+    return atat;
+}
+int main()
+{
+    int processes[] = {1, 2, 3};
+    int n = sizeof processes;
+    int bt[] = {10, 5, 8};
+    int at[] = {0, 0, 0};
+    float awt = float calculatewaitingtime(int processes[], int bt[], int at[], int n);
+    float atat = float calculateturnaroundtime(int processes[], int bt[], int wt[], int n);
+    printf("Avg Wt = %f\tAvg Tat = %f");
+    return 0;
 }
