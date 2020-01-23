@@ -1,20 +1,22 @@
 import java.util.Scanner;
+
 class Circle
 {
     float pi=3.14f;
-    float calcarea(float radius)
+    float calcarea(final float radius)
     {
-        float area=pi*radius*radius;
+        final float area=pi*radius*radius;
         return area;
     }
 }
 class areaofcircle
 {
-   public static void main(String[] args)
+   public static void main(final String[] args)
    {
-       Scanner s=new Scanner(System.in);
-       float radius=s.nextFloat();
-       Circle c1=new Circle();
+       final var s=new Scanner(System.in);
+       final float radius=s.nextFloat();
+       s.close();
+       final Circle c1=new Circle();
        System.out.println(c1.calcarea(radius));
    }
    

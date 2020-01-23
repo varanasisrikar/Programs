@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - areaofcircle",
+            "request": "launch",
+            "mainClass": "areaofcircle",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - patientcreation",
             "request": "launch",
             "mainClass": "patientcreation",
