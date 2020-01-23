@@ -11,19 +11,19 @@ class patient extends person
     String marital_status;
     String race;
     
-    patient(String pname,String pdob)
+    patient(final String pname,final String pdob)
     {
         super.name=pname;
         super.dob=pdob;
     }
-    patient(String pname,String pdob,String pgender,int page)
+    patient(final String pname,final String pdob,final String pgender,final int page)
     {
         super.name=pname;
         super.dob=pdob;
         super.gender=pgender;
         super.age=page;
     }
-    patient(String pname,String pdob,String pgender,int page,long paadhar_no,String pmarital_status,String prace)
+    patient(final String pname,final String pdob,final String pgender,final int page,final long paadhar_no,final String pmarital_status,final String prace)
     {
         super.name=pname;
         super.dob=pdob;
@@ -40,11 +40,11 @@ class patient extends person
 }
 class patientcreation
 {
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        patient grant = new patient("Grant","14-01-1990");
-        patient melissa = new patient("Melissa","04-10-1989","Female",30);
-        patient stephen = new patient("Stephen","08-05-1981","Male",39,12345678,"Married","Caucasian");
+        final patient grant = new patient("Grant","14-01-1990");
+        final patient melissa = new patient("Melissa","04-10-1989","Female",30);
+        final patient stephen = new patient("Stephen","08-05-1981","Male",39,12345678,"Married","Caucasian");
         grant.print_details();
         melissa.print_details();
         stephen.print_details();
