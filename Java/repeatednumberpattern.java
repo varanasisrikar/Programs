@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class pattern122333
+class repeatednumberpattern
 {
     public static void main(final String[] args)
     {
