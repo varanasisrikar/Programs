@@ -6,6 +6,33 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/OS/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "A:/Tools/TDM-GCC/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - areaofcircle",
             "request": "launch",
             "mainClass": "areaofcircle",
@@ -20,23 +47,23 @@
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - test",
+            "name": "CodeLens (Launch) - Test",
             "request": "launch",
-            "mainClass": "test",
+            "mainClass": "Test",
             "projectName": "Programs_8e2c7780"
         },
         {
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "program": "${workspaceFolder}/C/a.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "/path/to/gdb",
+            "miDebuggerPath": "A:/Tools/TDM-GCC/bin/gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
