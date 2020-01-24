@@ -5,6 +5,7 @@ class repeatednumberpattern
     {
         final Scanner s= new Scanner(System.in);
         final int n=s.nextInt();
+        s.close();
         if(n<0)
         {
             System.out.print(-1);
