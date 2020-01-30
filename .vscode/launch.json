@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - threads",
+            "request": "launch",
+            "mainClass": "threads",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - checksquare",
+            "request": "launch",
+            "mainClass": "checksquare",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - palindrome",
+            "request": "launch",
+            "mainClass": "palindrome",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - songtests",
+            "request": "launch",
+            "mainClass": "songtests",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SongTests",
             "request": "launch",
             "mainClass": "SongTests",
