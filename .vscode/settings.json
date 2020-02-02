@@ -14,6 +14,7 @@
         }
     ],
     "C_Cpp.errorSquiggles": "Disabled",
-    "sqltools.tableTreeItemsExpanded": true
+    "sqltools.tableTreeItemsExpanded": true,
+    "python.pythonPath": "C:\\Users\\varan\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
     
 }
