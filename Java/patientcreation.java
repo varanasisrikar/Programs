@@ -1,4 +1,4 @@
-class person
+class Person
 {
     String name;
     String dob;
@@ -6,24 +6,24 @@ class person
     int age;
     long aadhar_no;
 }
-class patient extends person
+class Patient extends Person
 {
     String marital_status;
     String race;
     
-    patient(final String pname,final String pdob)
+    Patient(final String pname,final String pdob)
     {
         super.name=pname;
         super.dob=pdob;
     }
-    patient(final String pname,final String pdob,final String pgender,final int page)
+    Patient(final String pname,final String pdob,final String pgender,final int page)
     {
         super.name=pname;
         super.dob=pdob;
         super.gender=pgender;
         super.age=page;
     }
-    patient(final String pname,final String pdob,final String pgender,final int page,final long paadhar_no,final String pmarital_status,final String prace)
+    Patient(final String pname,final String pdob,final String pgender,final int page,final long paadhar_no,final String pmarital_status,final String prace)
     {
         super.name=pname;
         super.dob=pdob;
@@ -42,9 +42,9 @@ class patientcreation
 {
     public static void main(final String[] args)
     {
-        final patient grant = new patient("Grant","14-01-1990");
-        final patient melissa = new patient("Melissa","04-10-1989","Female",30);
-        final patient stephen = new patient("Stephen","08-05-1981","Male",39,12345678,"Married","Caucasian");
+        final Patient grant = new Patient("Grant","14-01-1990");
+        final Patient melissa = new Patient("Melissa","04-10-1989","Female",30);
+        final Patient stephen = new Patient("Stephen","08-05-1981","Male",39,12345678,"Married","Caucasian");
         grant.print_details();
         melissa.print_details();
         stephen.print_details();

@@ -1,15 +1,3 @@
-/*Observe the following java code,identify the mistakes and correct the code 
-and make it working for produce the following output
-Hint: Relationships(is-a and has-a)
-
-Output: 
-Engine started...                                                                                                       
-Car Name: Audi                                                                                                          
-Car Color: Red                                                                                                          
-Max Speed: 180.0                                                                                                        
-Engine stoped... 
-
-*/
 class Car{
 	String name;
 	String color;

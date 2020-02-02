@@ -13,7 +13,7 @@ class Square {
         }
     }
 }
-class checksquare
+class Checksquare
 {
     public static void main(final String[] args)
     {

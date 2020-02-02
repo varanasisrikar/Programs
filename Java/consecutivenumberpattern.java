@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class consecutivenumberpattern
+class Consecutivenumberpattern
 {
     public static void main(final String[] args)
     {

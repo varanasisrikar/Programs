@@ -6,37 +6,44 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - threads",
+            "name": "CodeLens (Launch) - Primesum",
             "request": "launch",
-            "mainClass": "threads",
+            "mainClass": "Primesum",
             "projectName": "Programs_8e2c7780"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - checksquare",
+            "name": "CodeLens (Launch) - Songtests",
             "request": "launch",
-            "mainClass": "checksquare",
+            "mainClass": "Songtests",
             "projectName": "Programs_8e2c7780"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - palindrome",
+            "name": "CodeLens (Launch) - Checksquare",
             "request": "launch",
-            "mainClass": "palindrome",
+            "mainClass": "Checksquare",
             "projectName": "Programs_8e2c7780"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - songtests",
+            "name": "CodeLens (Launch) - Palindrome",
             "request": "launch",
-            "mainClass": "songtests",
+            "mainClass": "Palindrome",
             "projectName": "Programs_8e2c7780"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - SongTests",
+            "name": "CodeLens (Launch) - Consecutivenumberpattern",
             "request": "launch",
-            "mainClass": "SongTests",
+            "mainClass": "Consecutivenumberpattern",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Threads",
+            "request": "launch",
+            "mainClass": "Threads",
             "projectName": "Programs_8e2c7780"
         },
         {
@@ -58,20 +65,6 @@
                     "ignoreFailures": true
                 }
             ]
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - areaofcircle",
-            "request": "launch",
-            "mainClass": "areaofcircle",
-            "projectName": "Programs_8e2c7780"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - patientcreation",
-            "request": "launch",
-            "mainClass": "patientcreation",
-            "projectName": "Programs_8e2c7780"
         },
         {
             "name": "(gdb) Launch",

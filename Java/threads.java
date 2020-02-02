@@ -18,7 +18,7 @@ class Second implements Runnable
         }
     }
 }
-class threads
+class Threads
 {
     public static void main(String[] args) throws InterruptedException
     {

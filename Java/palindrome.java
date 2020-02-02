@@ -1,4 +1,4 @@
-class palindrome
+class Palindrome
 {
     public static void main(final String[] args)
     {
