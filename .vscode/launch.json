@@ -5,6 +5,34 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - Consecutivereversepattern",
+            "request": "launch",
+            "mainClass": "Consecutivereversepattern",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Duplicatearray",
+            "request": "launch",
+            "mainClass": "Duplicatearray",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Arrayreverse",
+            "request": "launch",
+            "mainClass": "Arrayreverse",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Nivennumber",
+            "request": "launch",
+            "mainClass": "Nivennumber",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
             "name": "Python: Current File (Integrated Terminal)",
             "type": "python",
             "request": "launch",
