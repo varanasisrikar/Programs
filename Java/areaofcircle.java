@@ -9,7 +9,7 @@ class Circle
         return area;
     }
 }
-class areaofcircle
+class Areaofcircle
 {
    public static void main(final String[] args)
    {

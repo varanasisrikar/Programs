@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Alternatingsymbolpattern",
+            "request": "launch",
+            "mainClass": "Alternatingsymbolpattern",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Consecutivenumberreversepattern",
             "request": "launch",
             "mainClass": "Consecutivenumberreversepattern",

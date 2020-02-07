@@ -2,7 +2,6 @@ class Car{
 	String name;
 	String color;
 	double speed;
-	
 }
 class Engine extends Car{
 	public void start(){
