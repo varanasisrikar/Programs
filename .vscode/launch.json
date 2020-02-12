@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - aa",
+            "request": "launch",
+            "mainClass": "aa",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ff",
+            "request": "launch",
+            "mainClass": "ff",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - C",
+            "request": "launch",
+            "mainClass": "C",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Q4",
+            "request": "launch",
+            "mainClass": "Q4",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Q3",
+            "request": "launch",
+            "mainClass": "Q3",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Q1",
+            "request": "launch",
+            "mainClass": "Q1",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Maxminchar",
+            "request": "launch",
+            "mainClass": "Maxminchar",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Test",
             "request": "launch",
             "mainClass": "Test",
