@@ -2,7 +2,7 @@
 float calculatewaitingtime(int wt[], int bt[], int n)
 {
         int i;
-        float swt=0;
+        float swt = 0;
         wt[0] = 0;
         for (i = 1; i < n; i++)
         {
@@ -18,7 +18,7 @@ float calculatewaitingtime(int wt[], int bt[], int n)
 float calculateturnaroundtime(int bt[], int wt[], int n)
 {
         int i;
-        float stat=0;
+        float stat = 0;
         int tat[n];
         for (i = 0; i < n; i++)
         {
@@ -34,11 +34,11 @@ float calculateturnaroundtime(int bt[], int wt[], int n)
 int main()
 {
         int processes[] = {1, 2, 3};
-        int n = sizeof (processes);
+        int n = sizeof(processes);
         int bt[] = {10, 5, 8};
         int wt[n];
-        float awt =calculatewaitingtime(wt,bt,n);
-        float atat =calculateturnaroundtime(bt,wt,n);
-        printf("Avg Wt = %f\tAvg Tat = %f",awt,atat);
+        float awt = calculatewaitingtime(wt, bt, n);
+        float atat = calculateturnaroundtime(bt, wt, n);
+        printf("Avg Wt = %f\tAvg Tat = %f", awt, atat);
         return 0;
 }
