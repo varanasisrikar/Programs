@@ -13,7 +13,7 @@ public static String SongDecoder (final String song)
    }
 }
 public class Songtests {
-  static void assertEquals(String S1,String S2)
+  static void assertEquals(final String S1,final String S2)
   {
     if(S1.equals(S2))
     {
