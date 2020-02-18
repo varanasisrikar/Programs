@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.autoSave": "onWindowChange",
+		"sqltools.connections": [
+			{
+				"database": "db",
+				"dialect": "MySQL",
+				"name": "localhost",
+				"password": "MySQL",
+				"port": 3306,
+				"server": "localhost",
+				"username": "root"
+			}
+		],
+		"sqltools.tableTreeItemsExpanded": true
+	}
+}

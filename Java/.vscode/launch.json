@@ -1,0 +1,110 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Areaofcircle",
+            "request": "launch",
+            "mainClass": "Areaofcircle",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Fibonacci",
+            "request": "launch",
+            "mainClass": "Fibonacci",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Maxminchar",
+            "request": "launch",
+            "mainClass": "Maxminchar",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Alternatingsymbolpattern",
+            "request": "launch",
+            "mainClass": "Alternatingsymbolpattern",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Consecutivenumberreversepattern",
+            "request": "launch",
+            "mainClass": "Consecutivenumberreversepattern",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Consecutivereversepattern",
+            "request": "launch",
+            "mainClass": "Consecutivereversepattern",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Duplicatearray",
+            "request": "launch",
+            "mainClass": "Duplicatearray",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Arrayreverse",
+            "request": "launch",
+            "mainClass": "Arrayreverse",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Nivennumber",
+            "request": "launch",
+            "mainClass": "Nivennumber",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Primesum",
+            "request": "launch",
+            "mainClass": "Primesum",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Songtests",
+            "request": "launch",
+            "mainClass": "Songtests",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Checksquare",
+            "request": "launch",
+            "mainClass": "Checksquare",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Palindrome",
+            "request": "launch",
+            "mainClass": "Palindrome",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Consecutivenumberpattern",
+            "request": "launch",
+            "mainClass": "Consecutivenumberpattern",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Threads",
+            "request": "launch",
+            "mainClass": "Threads",
+            "projectName": "Programs_8e2c7780"
+        },
+    ]
+}
