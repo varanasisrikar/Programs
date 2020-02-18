@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Maxminchar",
+            "request": "launch",
+            "mainClass": "Maxminchar",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Areaofcircle",
             "request": "launch",
             "mainClass": "Areaofcircle",
@@ -105,6 +112,6 @@
             "request": "launch",
             "mainClass": "Threads",
             "projectName": "Programs_8e2c7780"
-        },
+        }
     ]
 }
