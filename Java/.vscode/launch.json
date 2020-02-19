@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Arrayeledel",
+            "request": "launch",
+            "mainClass": "Arrayeledel",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Primeprint",
             "request": "launch",
             "mainClass": "Primeprint",

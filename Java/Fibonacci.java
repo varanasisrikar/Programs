@@ -22,7 +22,7 @@ return b;
 }
 else
 {
-while(i<=n)
+for(i=2;i<=n;i++)
 {
   c=a+b;
   a=b;
