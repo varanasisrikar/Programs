@@ -6,6 +6,7 @@ class Armstrongno
     {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
+        s.close();
         int temp=n;
         int sum=0;
         while(n>0)
