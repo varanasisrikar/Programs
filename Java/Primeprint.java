@@ -6,6 +6,7 @@ class Primeprint
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int m = s.nextInt();
+        s.close();
         for(int i=n+1;i<m;i++)
         {
             int step=0;

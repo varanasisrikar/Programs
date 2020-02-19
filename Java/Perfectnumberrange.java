@@ -9,6 +9,7 @@ class Perfectnumberrange
         int n = s.nextInt();
         System.out.println("Enter End Number");
         int m = s.nextInt();
+        s.close();
         System.out.println("Perfect Numbers between "+n+" and "+m+" are");
         for(int i=n;i<=m;i++)
         {
