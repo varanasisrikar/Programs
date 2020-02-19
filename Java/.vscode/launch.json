@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Primeprint",
+            "request": "launch",
+            "mainClass": "Primeprint",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Anagram",
+            "request": "launch",
+            "mainClass": "Anagram",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Maxminchar",
             "request": "launch",
             "mainClass": "Maxminchar",

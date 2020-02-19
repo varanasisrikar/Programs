@@ -3,7 +3,8 @@ public class Fibonacci {
     
     public static void main(String[] args) { 
 	 Scanner sc = new Scanner(System.in);
-	 int n=sc.nextInt(); 
+   int n=sc.nextInt(); 
+   sc.close();
         System.out.println(fib(n)); 
     } 
  static int fib(int n) {
