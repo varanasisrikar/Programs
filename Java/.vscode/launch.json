@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Palindrome",
+            "request": "launch",
+            "mainClass": "Palindrome",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Comparelexico",
             "request": "launch",
             "mainClass": "Comparelexico",
