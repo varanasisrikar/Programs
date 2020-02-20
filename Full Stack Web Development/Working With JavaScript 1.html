@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function addtition() {
+        var a = parseInt(document
+          .getElementById("marks_1")
+          .value);
+        var b = parseInt(document
+          .getElementById("marks_2")
+          .value);
+          c=a+b;
+        alert(c);
+        if(c>50)
+        {
+          alert("Passed");
+        }
+        else
+        {
+          alert("Failed")
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    Maths<input type="text" name="Maths Marks" id="marks_1">
+    <br>
+    Science
+    <input type="text" name="Science Marks" id="marks_2">
+    <br>
+    <input type="button" value="Add" onclick="addtition(1,2);">
+  </body>
+
+</html>
