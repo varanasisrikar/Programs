@@ -9,8 +9,15 @@
       function addtition() {
         var a = parseInt(document.getElementById("marks_1").value);
         var b = parseInt(document.getElementById("marks_2").value);
-        c = a + b;
-        alert(c);
+        if(!(isNaN(a)&isNaN(b)))
+        {
+            c = a + b;
+            alert(c);
+        }
+        else
+        {
+            alert("Input not a number, addition not possible");
+        }
         if (c > 50) {
           alert("Passed");
         } else {
