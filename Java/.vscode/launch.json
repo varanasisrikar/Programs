@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Wordoccurancecount",
+            "request": "launch",
+            "mainClass": "Wordoccurancecount",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Circle",
             "request": "launch",
             "mainClass": "Circle",
