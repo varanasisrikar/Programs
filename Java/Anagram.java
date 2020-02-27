@@ -8,6 +8,7 @@ class Anagram
 		String st = s.nextLine();
 		System.out.print("Enter the Second String : ");
 		String str = s.nextLine();
+		s.close();
 		    if(AnagramCheck(st,str))
 		    {
 		        System.out.println(st+" and "+str+" are Anagrams");

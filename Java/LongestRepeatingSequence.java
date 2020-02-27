@@ -1,4 +1,4 @@
-public class LongestRepeatingSequence {  
+public class Longestrepeatingsequence {  
     //Checks for the largest common prefix  
     public static String lcp(String s, String t){  
         int n = Math.min(s.length(),t.length());  
@@ -8,8 +8,7 @@ public class LongestRepeatingSequence {
             }  
         }  
         return s.substring(0,n);  
-    }  
-    public static void main(String[] args) {  
+    }  public static void main(String[] args) {  
         String str = "acbdfghybdf";  
         String lrs="";  
         int n = str.length();  

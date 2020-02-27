@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <script type="text/javascript">
+      function addtition() {
+        var a = parseInt(document.getElementById("n1").value);
+        var b = parseInt(document.getElementById("n2").value);
+        document
+          .getElementById("op")
+          .value = a + b;
+      }
+
+      function subtraction() {
+        var a = parseInt(document.getElementById("n1").value);
+        var b = parseInt(document.getElementById("n2").value);
+        document
+          .getElementById("op")
+          .value = a - b;
+      }
+
+      function multiplication() {
+        var a = parseInt(document.getElementById("n1").value);
+        var b = parseInt(document.getElementById("n2").value);
+        document
+          .getElementById("op")
+          .value = a * b;
+      }
+
+      function division() {
+        var a = parseInt(document.getElementById("n1").value);
+        var b = parseInt(document.getElementById("n2").value);
+        document
+          .getElementById("op")
+          .value = a / b;
+      }
+
+      function operation() {
+        var op = document
+          .getElementById("op")
+          .value;
+        switch (op) {
+          case '+':
+            addtition();
+            break;
+          case '-':
+            subtraction();
+            break;
+          case '*':
+            multiplication();
+            break;
+          case '/':
+            division();
+            break;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="heading">Switch Case</h1>
+    number 1:<input type="text" name="number 1" id="n1">
+    <br>
+    number 2:<input type="text" name="number 2" id="n2">
+    <br>
+    operation/result:<input type="text" name="operation" id="op">
+    <br>
+    <input type="button" value="submit" onclick="operation()">
+  </body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+      function changeheading() {
+        var ele = document
+          .getElementById("heading")
+          .innerHTML = "Changed Heading"
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="heading">Original Heading</h1>
+    <input type="button" value="Click Me to change the heading" onclick="changeheading()">
+  </body>
+
+</html>
