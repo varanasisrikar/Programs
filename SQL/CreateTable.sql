@@ -175,3 +175,4 @@ values(
     1400,
     40
   );
+select * from emph; 
