@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - threads",
+            "request": "launch",
+            "mainClass": "threads",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Maxminchar",
             "request": "launch",
             "mainClass": "Maxminchar",
