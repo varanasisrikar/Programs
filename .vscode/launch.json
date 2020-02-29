@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Money",
+            "request": "launch",
+            "mainClass": "Money",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Nthseries",
+            "request": "launch",
+            "mainClass": "Nthseries",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - threads",
             "request": "launch",
             "mainClass": "threads",
