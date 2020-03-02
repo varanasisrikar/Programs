@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Numberexpansion",
+            "request": "launch",
+            "mainClass": "Numberexpansion",
+            "projectName": "Programs_8e2c7780"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Money",
             "request": "launch",
             "mainClass": "Money",
