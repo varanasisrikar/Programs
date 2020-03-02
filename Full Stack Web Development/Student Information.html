@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+      body {
+        font-family: raleway;
+        color: black;
+      }
+    </style>
+    <title>Student Details</title>
+    <script type="text/javascript">
+    function getInfo()
+    {
+    var student1 = {name:document.getElementById("name1"),marks:document.getElementById("marks1"),email:document.getElementById("email1")};
+    var student2 = {name:document.getElementById("name2"),marks:document.getElementById("marks2"),email:document.getElementById("email1")};
+    }
+    </script>
+  </head>
+
+  <body>
+    <h1>Student Registration Form</h1>
+    <form>
+      <label for="studentName">Student1 Name</label>
+      <input type="text" id="name1" name="studentName">
+      <br>
+      <label for="studentMarks">Student1 Marks</label>
+      <input type="number" id="marks1" name="studentMarks">
+      <br>
+      <label for="studentEmail">Student1 Email</label>
+      <input type="email" id="email1" name="studentEmail">
+      <br>
+       <label for="studentName">Student2 Name</label>
+      <input type="text" id="name2" name="studentName">
+      <br>
+      <label for="studentMarks">Student2 Marks</label>
+      <input type="number" id="marks2" name="studentMarks">
+      <br>
+      <label for="studentEmail">Student2 Email</label>
+      <input type="email" id="email2" name="studentEmail">
+      <br>
+       <label for="studentName">Student3 Name</label>
+      <input type="text" id="name3" name="studentName">
+      <br>
+      <label for="studentMarks">Student3 Marks</label>
+      <input type="number" id="marks3" name="studentMarks">
+      <br>
+      <label for="studentEmail">Student3 Email</label>
+      <input type="email" id="email3" name="studentEmail">
+      <br>
+      <input type="button" value="Submit" onclick="getInfo()">
+      </form>
+
+    </body>
+  </html>
