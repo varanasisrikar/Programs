@@ -12,8 +12,16 @@
     <script type="text/javascript">
     function getInfo()
     {
-    var student1 = {name:document.getElementById("name1"),marks:document.getElementById("marks1"),email:document.getElementById("email1")};
-    var student2 = {name:document.getElementById("name2"),marks:document.getElementById("marks2"),email:document.getElementById("email1")};
+    var student1 = {name:document.getElementById("name1").value,marks:document.getElementById("marks1").value,email:document.getElementById("email1").value};
+    var student2 = {name:document.getElementById("name2").value,marks:document.getElementById("marks2").value,email:document.getElementById("email2").value};
+    var student3  = {name:document.getElementById("name3").value,marks:document.getElementById("marks3").value,email:document.getElementById("email3").value};
+   document.write("<table border='2' width=50%>");
+   document.write("<tr><td>"+student1.name+"</td><td>"+student1.marks+"</td><td>"+student1.email+"</td></tr>");
+   document.write("<tr><td>"+student2.name+"</td><td>"+student2.marks+"</td><td>"+student2.email+"</td></tr>");
+   document.write("<tr><td>"+student3.name+"</td><td>"+student3.marks+"</td><td>"+student3.email+"</td></tr>");
+   document.write("</table>")
+   var avg = (parseInt(student1.marks)+parseInt(student2.marks)+parseInt(student3.marks))/3;
+   console.log(avg);
     }
     </script>
   </head>
