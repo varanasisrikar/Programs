@@ -12,6 +12,7 @@ class Patientmodule
                 int number = 0;
                 int count = 0;
                 String st = bread.readLine();
+                st = bread.readLine();
                 while(st!=null)
                 {
                     String a[] = st.split(",");
