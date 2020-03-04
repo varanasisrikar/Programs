@@ -24,5 +24,6 @@ class Rafmod
         }
         r.seek(0);
         System.out.println(r.readLine());
+        r.close();
     }
 }

@@ -27,5 +27,6 @@ class Encodedstring
             }
         }
         System.out.println(sb);
+        s.close();
     }
 }

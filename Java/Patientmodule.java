@@ -43,6 +43,7 @@ class Patientmodule
                 }
                 bread.close();
                 fr.close();
+                s.close();
             }
             catch(IOException e)
             {
