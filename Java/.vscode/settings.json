@@ -1,21 +1,3 @@
 {
-    "editor.fontFamily": "Raleway, 'Raleway', monospace",
-    "editor.fontSize": 16,
-    "files.autoSave": "onWindowChange",
-    "sqltools.connections": [
-        {
-            "database": "db",
-            "dialect": "MySQL",
-            "name": "localhost",
-            "password": "MySQL",
-            "port": 3306,
-            "server": "localhost",
-            "username": "root"
-        }
-    ],
-    "C_Cpp.errorSquiggles": "Disabled",
-    "sqltools.tableTreeItemsExpanded": true,
-    "python.pythonPath": "C:\\Users\\varan\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-    "files.autoGuessEncoding": true
-    
+    "editor.fontFamily": "Raleway,'Raleway', monospace"
 }
