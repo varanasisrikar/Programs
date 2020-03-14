@@ -10,7 +10,7 @@ class Patientmodule
                 FileReader fr = new FileReader("Patient.csv");
                 BufferedReader bread = new BufferedReader(fr);
                 int number = 0;
-                int count = 0;
+                int count = 0;  
                 String st = bread.readLine();
                 st = bread.readLine();
                 while(st!=null)

@@ -10,13 +10,6 @@
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - raf",
-            "request": "launch",
-            "mainClass": "raf",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
             "name": "CodeLens (Launch) - Rafmod",
             "request": "launch",
             "mainClass": "Rafmod",
@@ -31,23 +24,9 @@
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - excep",
-            "request": "launch",
-            "mainClass": "excep",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
             "name": "CodeLens (Launch) - Fingerindexfor",
             "request": "launch",
             "mainClass": "Fingerindexfor",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Test",
-            "request": "launch",
-            "mainClass": "Test",
             "projectName": "Java_5b2ba771"
         },
         {
