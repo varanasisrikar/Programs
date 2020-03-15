@@ -1,85 +1,105 @@
-import java.io.*;
 import java.sql.*;
-
-class HRDashboard {
-	public HRDashboard(String fileName) throws Exception {
-		updateData(fileName);
+import java.io.*;
+class HRDashboard implements EmployeeDetails
+{
+	HRDashboard(String filename)throws Exception
+	{
+		updateData(filename);
 	}
-
-	private void updateData(String fileName) throws Exception {
+	private void updateData(String filename)throws Exception
+	{	
 		String driverClass = "com.mysql.cj.jdbc.Driver";
 		String path = "jdbc:mysql://localhost:3306/db";
 		String username = "root";
 		String password = "MySQL";
 		Class.forName(driverClass);
-
-		Connection con = DriverManager.getConnection(path, username, password);
-
-		File f = new File(fileName);
+		Connection con = DriverManager.getConnection(path,username,password);
+		Statement stmt;
+		
+		File f = new File(filename);
 		FileReader fr = new FileReader(f);
 		BufferedReader br = new BufferedReader(fr);
 		String d = br.readLine();
-		while (d != null) {
-			String empDetails[] = d.split(",");
-			Statement stmt = con.createStatement();
-			int eid = Integer.parseInt(empDetails[0]);
-			String eName = empDetails[1] + " " + empDetails[2];
-			String gender = empDetails[3];
-			String dept = empDetails[4] + "";
-			String saly = empDetails[5];
-			float sal = 0.0f;
-			if (saly == null || saly.equals("")) {
-				sal = -1.00f;
-			} else {
-				System.out.println(eName + " " + empDetails[5]);
-				saly = empDetails[5].replace("$", "");
-				System.out.println(saly.substring(0));
-				sal = Float.valueOf(saly.substring(0).trim());
+		while(d!=null)
+		{
+			String s[] = d.split(",");
+			stmt = con.createStatement();
+			;
+			int eid = Integer.parseInt(s[0]);
+			String ename = s[1]+" "+s[2];
+			String gender = s[3];
+			String dept = s[4]+"";
+			String sal = s[5];
+			System.out.println(sal);
+			float salary=0.00f;
+			if(sal==null||sal.equals(null)||sal.equals(""))
+			{
+				salary = -1.00f;
 			}
-			String email = empDetails[7];
-
-			String sqlQuery = "insert into emp values(" + eid + ",'" + eName + "','" + gender + "','" + dept + "',"
-					+ sal + ")";
-			System.out.println(sqlQuery);
+			else
+			{
+				sal = sal.replace("$","");
+				sal = sal.replace(",","");
+				salary = Float.parseFloat(sal);
+			}
+			String email = s[6];
+			String sqlQuery = "insert into emp values("+eid+",'"+ename+"','"+gender+"','"+dept+"',"+salary+",'"+email+"');";
 			int i = stmt.executeUpdate(sqlQuery);
 			System.out.println(i);
-			d = br.readLine();
+			d=br.readLine();
 		}
-		br.close();
+		con.close();
 	}
-
-	public void getHigherNumberOfFemales() throws Exception {
-		String driverClass = "com.mysql.cj.jdbc.Driver";
-		String path = "jdbc:mysql://localhost:3306/cse";
-		String username = "root";
+		public void getHighestNumberOfFemales()
+		{
+			try
+			{
+				String driverClass = "com.mysql.cj.jdbc.Driver";
+				String path = "jdbc:mysql://localhost:3306/db1";
+				String username = "root";
+				String password = "MySQL";
+				Class.forName(driverClass);
+				Connection con = DriverManager.getConnection(path,username,password);
+				Statement stmt = con.createStatement();
+				String F = "F";
+				ResultSet rs = stmt.executeQuery("select dept,max(femalesNo) as deptWithHighNoOfFemales from (select dept,count(eid) as femalesNo from emp where gender='"+F+"'group by dept) as result");
+				int count = 0;
+				String dept=" ";
+				while(rs.next())
+				{
+					dept=rs.getString(1);
+					count+=rs.getInt(2);
+				}
+				System.out.println("Dept with high number of females");
+				System.out.println(dept+" : "+count);
+			}
+			catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
+		}
+	public void getHighestPaidEmployee() throws Exception
+	{
+		String driverClass="com.mysql.cj.jdbc.Driver";
+		String path = "jdbc:mysql://localhost:3306/db";
+		//Please specify your own server details
+		String username  ="root";
 		String password = "MySQL";
 		Class.forName(driverClass);
-		Connection con = DriverManager.getConnection(path, username, password);
+		Connection con = DriverManager.getConnection(path,username,password);
 		Statement stmt = con.createStatement();
-		ResultSet rs = stmt.executeQuery("select count(*),dept from emp where gender='F' group by dept");
-		while (rs.next() != false) {
-			System.out.println(rs.getInt(1));
-			System.out.println(rs.getString(2));
-		}
-	}
-
-	public void getHighestPaidEmployee() throws Exception {
-		String driverClass = "com.mysql.cj.jdbc.Driver";
-		String path = "jdbc:mysql://localhost:3306/cse";
-		String username = "root";
-		String password = "MySQL";
-		Class.forName(driverClass);
-		Connection con = DriverManager.getConnection(path, username, password);
-		Statement stmt = con.createStatement();
+		//execute query should be used for SELECT statements
+		//System.out.println("max salary");
 		ResultSet rs = stmt.executeQuery("select max(sal) from emp");
-		while (rs.next() != false) {
+		//When result set is returned it always point before first row
+		while(rs.next() != false)
+		{
 			System.out.println(rs.getInt(1));
+			//System.out.println(rs.getString(2));
 		}
 	}
-
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception
+	{
 		HRDashboard hrd = new HRDashboard("Emp.csv");
-		hrd.getHigherNumberOfFemales();
-		hrd.getHighestPaidEmployee();
+		hrd.getHighestNumberOfFemales();
 	}
 }

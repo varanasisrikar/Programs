@@ -4,5 +4,12 @@
       "path": "."
     }
   ],
-  "settings": {}
+  "settings": {
+    "java.project.referencedLibraries": [
+      "lib/**/*.jar",
+      "c:\\Program Files (x86)\\MySQL\\Connector J 8.0\\mysql-connector-java-8.0.19.jar"
+    ],
+    "java.dependency.packagePresentation": "flat",
+    "java.dependency.syncWithFolderExplorer": true
+  }
 }

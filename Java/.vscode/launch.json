@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Alternatingsymbolpattern",
+            "request": "launch",
+            "mainClass": "Alternatingsymbolpattern",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HRDashboard",
+            "request": "launch",
+            "mainClass": "HRDashboard",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Calc",
             "request": "launch",
             "mainClass": "Calc",
