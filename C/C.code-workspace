@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "includePath": "A:/Tools/TDM-GCC/lib/gcc/x86_64-w64-mingw32/5.1.0/include"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.csv": "csv (whitespace)",
+      "stdio.h": "c"
+    }
+  }
+}
