@@ -14,10 +14,28 @@ function tickets(peopleInLine) {
     }
   }
   if (sold == peopleInLine.length) {
+    console.log(sold);
+    console.log(peopleInLine.length);
     return "YES";
   } else {
     return "NO";
   }
 }
-var x = tickets([25, 100]);
+var x = tickets([
+  25,
+  50,
+  25,
+  100,
+  25,
+  25,
+  50,
+  100,
+  25,
+  50,
+  25,
+  100,
+  25,
+  100,
+  100
+]);
 console.log(x);
