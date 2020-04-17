@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Perfectnumberrange",
+            "request": "launch",
+            "mainClass": "Perfectnumberrange",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Reverseprime",
+            "request": "launch",
+            "mainClass": "Reverseprime",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Emirp",
+            "request": "launch",
+            "mainClass": "Emirp",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Emirpnumber",
+            "request": "launch",
+            "mainClass": "Emirpnumber",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TwoToOne",
             "request": "launch",
             "mainClass": "TwoToOne",
