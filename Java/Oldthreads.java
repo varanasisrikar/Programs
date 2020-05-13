@@ -1,11 +1,11 @@
-class first implements Runnable{
+class Firstr implements Runnable{
     public void run(){
         for(int i=0;i<100;i++){
         System.out.println("KMIT");
         }
     }
 }
-class second implements Runnable{
+class Secondr implements Runnable{
     public void run(){
         for(int i=0;i<100;i++){
         System.out.println("NGIT");
@@ -16,8 +16,8 @@ class second implements Runnable{
 class Oldthreads{
     public static void main(String[] args) throws InterruptedException
     {
-        first f=new first();
-        second s=new second();
+        Firstr f=new Firstr();
+        Secondr s=new Secondr();
         Thread t1=new Thread(f);
         Thread t2=new Thread(s);
         t1.start();
