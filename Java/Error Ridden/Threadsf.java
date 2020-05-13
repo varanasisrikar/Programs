@@ -1,10 +1,8 @@
-import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-class First implements Callable<String>{
+class Firstcf implements Callable<String>{
     public String call() throws Exception
     {
         for(int i=0;i<100;i++){
@@ -15,7 +13,7 @@ class First implements Callable<String>{
     }
 }
 
-class Second implements Callable<String>{
+class Secondcf implements Callable<String>{
     public String call() throws Exception
     {
         for(int i=0;i<100;i++){
@@ -26,14 +24,14 @@ class Second implements Callable<String>{
     }
 }
 
-class threads3{
+class Threadsf{
     public static void main(String[] args) throws Exception
     {
-        Callable<String> f=new First();
-        Callable<String> s=new Second();
+        Callable<String> f=new Firstcf();
+        Callable<String> s=new Secondcf();
        ExecutorService executor =Executors.newFixedThreadPool(10);
-       Future f1=executor.submit(f);
-       Future f2=executor.submit(s);
+       Future<String> f1=executor.submit(f);
+       Future<String> f2=executor.submit(s);
        
     }
 }

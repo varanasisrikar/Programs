@@ -3,6 +3,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Encodestring",
+            "request": "launch",
+            "mainClass": "Encodestring",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Binaryarraytonumber",
+            "request": "launch",
+            "mainClass": "Binaryarraytonumber",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Spiralmatprint",
+            "request": "launch",
+            "mainClass": "Spiralmatprint",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Palindrome1",
+            "request": "launch",
+            "mainClass": "Palindrome1",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - strpat",
+            "request": "launch",
+            "mainClass": "strpat",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Perfectnumberrange",
             "request": "launch",
             "mainClass": "Perfectnumberrange",

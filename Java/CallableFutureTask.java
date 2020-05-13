@@ -61,12 +61,13 @@ class CallableFutureTask
         double rad = s.nextDouble();
         System.out.println("Enter a number");
         int num = s.nextInt();
+        s.close();
         Area a = new Area(rad);
         Factorial f = new Factorial(num);
         Circ c = new Circ(rad);
-        FutureTask aft = new FutureTask(a);
-        FutureTask fft = new FutureTask(f);
-        FutureTask cft = new FutureTask(c);
+        FutureTask<Double> aft = new FutureTask<Double>(a);
+        FutureTask<Integer> fft = new FutureTask<Integer>(f);
+        FutureTask<Double> cft = new FutureTask<Double>(c);
         Thread t1 = new Thread(aft);
         Thread t2 = new Thread(fft);
         Thread t3 = new Thread(cft);

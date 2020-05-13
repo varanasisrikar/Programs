@@ -1,16 +1,17 @@
 class Dubstep {
-public static String SongDecoder (final String song)
-{
-    final String array[]=song.split("WUB");
-    final StringBuffer sb = new StringBuffer();
-    for(int i=0;i<array.length;i++)
-    {
-        sb.append(array[i]);
+  public static String SongDecoder(String song) {
+    String s = song.replace("WUB", " ").trim();
+    String[] sarr = s.split(" ");
+    StringBuilder sb = new StringBuilder("");
+    for (int i = 0; i < sarr.length; i++) {
+      if (i < sarr.length - 1) {
+        sb.append(sarr[i] + " ");
+      } else {
+        sb.append(sarr[i]);
+      }
     }
-    final String s = sb.toString();
-    System.out.println(s);
-     return s;
-   }
+    return sb.toString();
+  }
 }
 public class Songtests {
   static void assertEquals(final String S1,final String S2)

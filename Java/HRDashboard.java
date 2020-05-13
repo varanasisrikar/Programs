@@ -26,28 +26,27 @@ class HRDashboard implements EmployeeDetails
 			stmt = con.createStatement();
 			;
 			int eid = Integer.parseInt(s[0]);
-			String ename = s[1]+" "+s[2];
+			String ename = s[1] + " " + s[2];
 			String gender = s[3];
-			String dept = s[4]+"";
+			String dept = s[4] + "";
 			String sal = s[5];
 			System.out.println(sal);
-			float salary=0.00f;
-			if(sal==null||sal.equals(null)||sal.equals(""))
-			{
+			float salary = 0.00f;
+			if (sal == null || sal.equals(null) || sal.equals("")) {
 				salary = -1.00f;
-			}
-			else
-			{
-				sal = sal.replace("$","");
-				sal = sal.replace(",","");
+			} else {
+				sal = sal.replace("$", "");
+				sal = sal.replace(",", "");
 				salary = Float.parseFloat(sal);
 			}
 			String email = s[6];
-			String sqlQuery = "insert into emp values("+eid+",'"+ename+"','"+gender+"','"+dept+"',"+salary+",'"+email+"');";
+			String sqlQuery = "insert into emp values(" + eid + ",'" + ename + "','" + gender + "','" + dept + "',"
+					+ salary + ",'" + email + "');";
 			int i = stmt.executeUpdate(sqlQuery);
 			System.out.println(i);
-			d=br.readLine();
+			d = br.readLine();
 		}
+		br.close();
 		con.close();
 	}
 		public void getHighestNumberOfFemales()
