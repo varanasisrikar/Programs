@@ -10,4 +10,3 @@ pl.plot(Data)
 pl.show()
 pl.hist(Data)
 pl.show()
-Co
