@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CCValidate",
+            "request": "launch",
+            "mainClass": "CCValidate",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Dubstep$Songtests",
             "request": "launch",
             "mainClass": "Dubstep$Songtests",
@@ -41,13 +48,6 @@
             "name": "CodeLens (Launch) - Palindrome1",
             "request": "launch",
             "mainClass": "Palindrome1",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - strpat",
-            "request": "launch",
-            "mainClass": "strpat",
             "projectName": "Java_5b2ba771"
         },
         {
