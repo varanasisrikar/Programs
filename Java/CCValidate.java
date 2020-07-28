@@ -13,7 +13,7 @@ class CCValidate {
             }
             sum += digit;
         }
-        sum +q= Integer.parseInt(ps[ps.length - 1]);
+        sum += Integer.parseInt(ps[ps.length - 1]);
         if (sum % 10 == 0) {
             return true;
         } else {
