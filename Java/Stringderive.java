@@ -28,6 +28,7 @@ public class Stringderive {
         Scanner sc = new Scanner(System.in);
         String str1 = sc.next();
         String str2 = sc.next();
+        sc.close();
         checkI(str1, str2);
     }
 
