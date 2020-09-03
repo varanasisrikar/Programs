@@ -3,6 +3,90 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Stackops",
+            "request": "launch",
+            "mainClass": "Stackops",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Verticalprint",
+            "request": "launch",
+            "mainClass": "Verticalprint",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Decodedstring",
+            "request": "launch",
+            "mainClass": "Decodedstring",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Decodestring",
+            "request": "launch",
+            "mainClass": "Decodestring",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - orddisplacement",
+            "request": "launch",
+            "mainClass": "orddisplacement",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - worddisplacement",
+            "request": "launch",
+            "mainClass": "worddisplacement",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Worddisplacement",
+            "request": "launch",
+            "mainClass": "Worddisplacement",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Stringderive",
+            "request": "launch",
+            "mainClass": "Stringderive",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Missingballnumber",
+            "request": "launch",
+            "mainClass": "Missingballnumber",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Missingnumber",
+            "request": "launch",
+            "mainClass": "Missingnumber",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - jerseymapping",
+            "request": "launch",
+            "mainClass": "jerseymapping",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - timetaken",
+            "request": "launch",
+            "mainClass": "timetaken",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CCValidate",
             "request": "launch",
             "mainClass": "CCValidate",
