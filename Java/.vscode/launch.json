@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Charordervalid",
+            "request": "launch",
+            "mainClass": "Charordervalid",
+            "projectName": "Java_5b2ba771"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Stackops",
             "request": "launch",
             "mainClass": "Stackops",

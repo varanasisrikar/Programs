@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <h1>One Time Password generator</h1>
+    <script>
+      var char = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`~!@#$%%^&*()-_=+[{]}|;:,<.>/?";
+      var num = "0123456789";
+
+      function otpnum(n) {
+        var otp = "";
+        var length = num.length;
+        for (var i = 0; i < n; i++) {
+          otp += num[Math.floor(Math.random() * length)];
+        }
+        document
+          .getElementById("result")
+          .value = otp;
+      }
+
+      function otpalphnum(n) {
+        var otp = "";
+        var length = char.length;
+        for (var i = 0; i < n; i++) {
+          otp += char[Math.floor(Math.random() * length)];
+        }
+        document
+          .getElementById("result")
+          .value = otp;
+      }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Time Password generator</title>
+  </head>
+
+  <body>
+    Numeric otp generator<br>
+    <input type="button" value="4 digit numeric" onclick="otpnum(4)"/><br>
+    <input type="button" value="6 digit numeric" onclick="otpnum(6)"/><br>
+    Alphanumeric otp generator<br>
+    <input type="button" value="4 digit alphanumeric" onclick="otpalphnum(4)"/><br>
+    <input type="button" value="6 digit alphanumeric" onclick="otpalphnum(6)"/><br>
+    The otp is
+    <input type="text" id="result"><br>
+  </body>
+
+</html>

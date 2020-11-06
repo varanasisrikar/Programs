@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <h1>Array Elements within two indices</h1>
+    <script>
+      var a = [];
+      var n = prompt("Enter the length of array");
+      for (var i = 0; i < n; i++) {
+        a.push(prompt("Enter the elements of the array"));
+      }
+      var i1 = parseInt(prompt("Enter the lower index"));
+      var i2 = parseInt(prompt("Enter the higher index"));
+      document.writeln(a.slice(i1, i2) + " are the elements b/w " + i1 + " and " + i2);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Elements within two indices</title>
+  </head>
+
+</html>

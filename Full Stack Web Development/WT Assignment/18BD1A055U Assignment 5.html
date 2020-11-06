@@ -1,0 +1,52 @@
+<html>
+
+  <head>
+    <h1>Number Operations</h1>
+    <script>
+      function addition() {
+        var r;
+        r = parseInt(p) + parseInt(q);
+        document.writeln(p + "+" + q + "=" + r);
+      }
+
+      function subtraction() {
+        var r;
+        r = parseInt(p) - parseInt(q);
+        document.writeln(p + "-" + q + "=" + r);
+      }
+
+      function multiplication() {
+        var r;
+        r = parseInt(p) * parseInt(q);
+        document.writeln(p + "*" + q + "=" + r);
+      }
+
+      function division() {
+        var r;
+        r = parseInt(p) / parseInt(q);
+        document.writeln(p + "/" + q + "=" + r);
+      }
+      var p = prompt("Enter the first number");
+      var q = prompt("Enter the second number");
+      var operator = prompt("Enter the operation");
+      switch (operator) {
+        case '+':
+          addition(p, q);
+          break;
+        case '-':
+          subtraction(p, q);
+          break;
+        case '*':
+          multiplication(p, q);
+          break;
+        case '/':
+          division(p, q);
+          break;
+      }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Operations</title>
+  </head>
+
+</html>

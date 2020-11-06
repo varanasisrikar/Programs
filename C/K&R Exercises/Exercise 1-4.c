@@ -9,10 +9,10 @@ int main() {
   step = 20;
 
   celsius = lower;
-  printf("Celsius-Fahrenheit Step Table");
+  printf("Celsius-Fahrenheit Step Table\n");
   while (celsius <= upper) {
     fahr = (celsius * 9.0 / 5.0) + 32.0;
-    printf("%6.1f%3.0f\n", fahr, celsius);
+    printf("%6.1f\t%3.0f\n", celsius, fahr);
     celsius = celsius + step;
   }
 }

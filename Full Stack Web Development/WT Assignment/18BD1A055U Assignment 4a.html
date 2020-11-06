@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <h1>Unique Array Elements</h1>
+    <script>
+      var a = [];
+      var ar = [];
+      var n = prompt("Enter the length of array:");
+      for (var i = 0; i < n; i++) {
+        var o = prompt("Enter the elements of the array");
+        a.push(o);
+      }
+      document.writeln("The elements of the array are");
+      for (var i of a) {
+        document.write(i + " ");
+      }
+      for (var i of a) {
+        if (ar.indexOf(i) == -1) {
+          ar.push(i);
+        }
+      }
+      document.writeln(", The unique array elements are");
+      for (var i of ar) {
+        document.write(i + " ");
+      }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Array Elements</title>
+  </head>

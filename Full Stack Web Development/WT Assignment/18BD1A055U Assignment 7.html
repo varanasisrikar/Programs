@@ -1,0 +1,37 @@
+<html>
+
+  <head>
+
+    <title>Capitals Dropdown
+    </title>
+    <script>
+      function getcapital(o) {
+        var capital = o
+          .options[o.selectedIndex]
+          .value;
+        document
+          .getElementById("capital")
+          .innerHTML = capital;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>
+      Select a Country from the below options</h1>
+    <form action="">
+      <select name="Country" onchange="getcapital(this);">
+        <option value="">Select a Country</option>
+        <option value="New Delhi">India</option>
+        <option value="Washington D.C">United State</option>
+        <option value="Kuala Lumpur">Malaysia</option>
+        <option value="Dhaka">Bangladesh</option>
+        <option value="Kathmandu">Nepal</option>
+      </select>
+
+      <h2 id="capital"></h2>
+    </form>
+
+  </body>
+
+</html>

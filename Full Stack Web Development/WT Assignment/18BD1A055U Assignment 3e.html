@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <h1>Vowel Counter</h1>
+    <script>
+      var s = prompt("Enter a String");
+
+      function vowelcounter(text) {
+        const vowelarr = ["a", "e", "i", "o", "u"];
+        let count = 0;
+        for (let letter of text.toLowerCase()) {
+          if (vowelarr.includes(letter)) {
+            count++;
+          }
+        }
+        document.writeln("The String contains " + count + " vowels");
+      }
+      vowelcounter(s);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Counter</title>
+  </head>
+
+</html>

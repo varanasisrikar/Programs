@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <h1>Armstrong Number</h1>
+    <script>
+      function armnums() {
+        var n = prompt("Enter start value");
+        var n1 = prompt("Enter end value");
+        document.write("Armstrong Numbers between " + n + " and " + n1 + ":");
+        for (var j = n; j <= n1; j++) {
+          var sum = 0;
+          var temp = j;
+          while (temp > 0) {
+            var n = temp % 10;
+            sum = sum + n * n * n;
+            temp = parseInt(temp / 10);
+          }
+          if (sum == j) {
+            document.write(sum + " ");
+          }
+        }
+      }
+      armnums();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Numbers between Two Numbers</title>
+  </head>
+
+</html>
