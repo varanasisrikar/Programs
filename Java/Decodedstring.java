@@ -8,6 +8,7 @@ class Decodedstring {
         for (int i = 0; i < decpos.length; i++) {
             decpos[i] = s.nextInt();
         }
+        s.close();
         char[] encodedarr = encodedstr.toCharArray();
         char[] decodedarr = new char[encodedarr.length];
         for (int i = 0; i < encodedarr.length; i++) {

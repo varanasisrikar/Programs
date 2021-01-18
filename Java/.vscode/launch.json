@@ -1,201 +1,215 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Charordervalid",
-            "request": "launch",
-            "mainClass": "Charordervalid",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Stackops",
-            "request": "launch",
-            "mainClass": "Stackops",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Verticalprint",
-            "request": "launch",
-            "mainClass": "Verticalprint",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Decodedstring",
-            "request": "launch",
-            "mainClass": "Decodedstring",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Decodestring",
-            "request": "launch",
-            "mainClass": "Decodestring",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - orddisplacement",
-            "request": "launch",
-            "mainClass": "orddisplacement",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - worddisplacement",
-            "request": "launch",
-            "mainClass": "worddisplacement",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Worddisplacement",
-            "request": "launch",
-            "mainClass": "Worddisplacement",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Stringderive",
-            "request": "launch",
-            "mainClass": "Stringderive",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Missingballnumber",
-            "request": "launch",
-            "mainClass": "Missingballnumber",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Missingnumber",
-            "request": "launch",
-            "mainClass": "Missingnumber",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - jerseymapping",
-            "request": "launch",
-            "mainClass": "jerseymapping",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - timetaken",
-            "request": "launch",
-            "mainClass": "timetaken",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - CCValidate",
-            "request": "launch",
-            "mainClass": "CCValidate",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Dubstep$Songtests",
-            "request": "launch",
-            "mainClass": "Dubstep$Songtests",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Songtests",
-            "request": "launch",
-            "mainClass": "Songtests",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Encodestring",
-            "request": "launch",
-            "mainClass": "Encodestring",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Binaryarraytonumber",
-            "request": "launch",
-            "mainClass": "Binaryarraytonumber",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Spiralmatprint",
-            "request": "launch",
-            "mainClass": "Spiralmatprint",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Palindrome1",
-            "request": "launch",
-            "mainClass": "Palindrome1",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Perfectnumberrange",
-            "request": "launch",
-            "mainClass": "Perfectnumberrange",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Reverseprime",
-            "request": "launch",
-            "mainClass": "Reverseprime",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Emirp",
-            "request": "launch",
-            "mainClass": "Emirp",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Emirpnumber",
-            "request": "launch",
-            "mainClass": "Emirpnumber",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - TwoToOne",
-            "request": "launch",
-            "mainClass": "TwoToOne",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Alternatingsymbolpattern",
-            "request": "launch",
-            "mainClass": "Alternatingsymbolpattern",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - HRDashboard",
-            "request": "launch",
-            "mainClass": "HRDashboard",
-            "projectName": "Java_5b2ba771"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Calc",
-            "request": "launch",
-            "mainClass": "Calc",
-            "projectName": "Java_5b2ba771"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Bracechecker",
+      "request": "launch",
+      "mainClass": "Bracechecker",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "Launch Solution",
+      "request": "launch",
+      "mainClass": "Solution",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Charordervalid",
+      "request": "launch",
+      "mainClass": "Charordervalid",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Stackops",
+      "request": "launch",
+      "mainClass": "Stackops",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Verticalprint",
+      "request": "launch",
+      "mainClass": "Verticalprint",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Decodedstring",
+      "request": "launch",
+      "mainClass": "Decodedstring",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Decodestring",
+      "request": "launch",
+      "mainClass": "Decodestring",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - orddisplacement",
+      "request": "launch",
+      "mainClass": "orddisplacement",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - worddisplacement",
+      "request": "launch",
+      "mainClass": "worddisplacement",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Worddisplacement",
+      "request": "launch",
+      "mainClass": "Worddisplacement",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Stringderive",
+      "request": "launch",
+      "mainClass": "Stringderive",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Missingballnumber",
+      "request": "launch",
+      "mainClass": "Missingballnumber",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Missingnumber",
+      "request": "launch",
+      "mainClass": "Missingnumber",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - jerseymapping",
+      "request": "launch",
+      "mainClass": "jerseymapping",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - timetaken",
+      "request": "launch",
+      "mainClass": "timetaken",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - CCValidate",
+      "request": "launch",
+      "mainClass": "CCValidate",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Dubstep$Songtests",
+      "request": "launch",
+      "mainClass": "Dubstep$Songtests",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Songtests",
+      "request": "launch",
+      "mainClass": "Songtests",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Encodestring",
+      "request": "launch",
+      "mainClass": "Encodestring",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Binaryarraytonumber",
+      "request": "launch",
+      "mainClass": "Binaryarraytonumber",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Spiralmatprint",
+      "request": "launch",
+      "mainClass": "Spiralmatprint",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Palindrome1",
+      "request": "launch",
+      "mainClass": "Palindrome1",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Perfectnumberrange",
+      "request": "launch",
+      "mainClass": "Perfectnumberrange",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Reverseprime",
+      "request": "launch",
+      "mainClass": "Reverseprime",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Emirp",
+      "request": "launch",
+      "mainClass": "Emirp",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Emirpnumber",
+      "request": "launch",
+      "mainClass": "Emirpnumber",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - TwoToOne",
+      "request": "launch",
+      "mainClass": "TwoToOne",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Alternatingsymbolpattern",
+      "request": "launch",
+      "mainClass": "Alternatingsymbolpattern",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - HRDashboard",
+      "request": "launch",
+      "mainClass": "HRDashboard",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Calc",
+      "request": "launch",
+      "mainClass": "Calc",
+      "projectName": "Java_5b2ba771"
+    }
+  ]
 }

@@ -5,11 +5,17 @@
     }
   ],
   "settings": {
-    "java.project.referencedLibraries": [
-      "lib/**/*.jar",
-      "c:\\Program Files (x86)\\MySQL\\Connector J 8.0\\mysql-connector-java-8.0.19.jar"
-    ],
-    "java.dependency.packagePresentation": "flat",
+    "java.project.referencedLibraries": {
+      "include": [
+        "lib/**/*.jar",
+        "c:\\Program Files (x86)\\MySQL\\Connector J 8.0\\mysql-connector-java-8.0.19.jar"
+      ],
+      "exclude": [
+        "c:\\Program Files\\Java\\javafx-sdk-11.0.2\\lib\\javafx.controls.jar",
+        "c:\\Program Files\\Java\\javafx-sdk-11.0.2\\lib\\javafx.graphics.jar"
+      ]
+    },
+    "java.dependency.packagePresentation": "hierarchical",
     "java.dependency.syncWithFolderExplorer": true
   }
 }

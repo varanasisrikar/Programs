@@ -12,6 +12,7 @@ class Charordervalid {
             board[i] = s.nextLine().toCharArray();
             Arrays.sort(board[i]);
         }
+        s.close();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (alph[k] == board[i][j]) {

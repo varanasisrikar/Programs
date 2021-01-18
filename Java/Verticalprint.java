@@ -4,6 +4,7 @@ class Verticalprint {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         String sentence = s.nextLine();
+        s.close();
         String[] word = sentence.split(" ");
         int maxlength = -10;
         for (int i = 0; i < word.length; i++) {
