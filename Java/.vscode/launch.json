@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Comparelexico",
+      "request": "launch",
+      "mainClass": "Comparelexico",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "Launch highestslProduct",
+      "request": "launch",
+      "mainClass": "FS.highestslProduct",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "Launch decodeKeyboard",
+      "request": "launch",
+      "mainClass": "FS.decodeKeyboard",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "Launch sweetTrack",
+      "request": "launch",
+      "mainClass": "FS.sweetTrack",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "Launch posswitchChar",
+      "request": "launch",
+      "mainClass": "FS.posswitchChar",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "Launch numsumStr",
+      "request": "launch",
+      "mainClass": "FS.numsumStr",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
       "name": "Launch Bracechecker",
       "request": "launch",
       "mainClass": "Bracechecker",
