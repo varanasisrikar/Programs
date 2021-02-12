@@ -6,10 +6,10 @@ void main() {
   printf("Enter characters to be stuffed:");
   scanf("%s", a);
   printf("\nEnter a character that represents starting delimiter:");
-  scanf(“ “);
+  scanf(" ");
   scanf("%c", &sd);
   printf("\nEnter a character that represents ending delimiter:");
-  scanf(“ “);
+  scanf(" ");
   scanf("%c", &ed);
   x[0] = s[0] = s[1] = sd;
   x[1] = s[2] = '\0';

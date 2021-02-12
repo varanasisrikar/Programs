@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch cardWin",
+      "request": "launch",
+      "mainClass": "FS.cardWin",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "Launch Threadsf",
+      "request": "launch",
+      "mainClass": "Threadsf",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
       "name": "Launch Comparelexico",
       "request": "launch",
       "mainClass": "Comparelexico",
