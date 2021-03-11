@@ -3,7 +3,6 @@
 #include <stdlib.h>
 void main() {
   int i, j, n, g, a, arr[20], gen[20], b[20], q[20], s;
-  clrscr();
   printf("Transmitter side:");
   printf("\nEnter no. of data bits:");
   scanf("%d", &n);

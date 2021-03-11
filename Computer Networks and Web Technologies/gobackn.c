@@ -5,7 +5,7 @@ int main() {
   scanf("%d", &windowsize);
   while (1) {
     for (i = 0; i < windowsize; i++) {
-      printf("Frame %d has been transmitted.\n", sent);
+      printf("Frame %d has been transmitted.\n", sent + 1);
       sent++;
       if (sent == windowsize)
         break;
