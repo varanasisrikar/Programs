@@ -8,6 +8,7 @@ class shuffleStringMap {
     for (int i = 0; i < st.length(); i++) {
       changes[i] = s.nextInt();
     }
+    s.close();
     System.out.println(shufString(st, changes));
   }
   public static String shufString(String s, int[] ch) {

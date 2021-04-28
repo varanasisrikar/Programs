@@ -1,10 +1,9 @@
-package FS;
-
 import java.util.Scanner;
 
 class cardWin {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
+        s.close();
         int shsc = 0, andsc = 0;
         int n = s.nextInt();
         int[] scards = new int[n];

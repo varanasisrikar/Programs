@@ -8,6 +8,7 @@ class shuffleString {
     for (int i = 0; i < st.length(); i++) {
       changes[i] = s.nextInt();
     }
+    s.close();
     String[] str = st.split("");
     for (int i = 0; i < str.length; i++) {
       String temp = str[i];

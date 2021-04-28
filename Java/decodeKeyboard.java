@@ -1,5 +1,3 @@
-package FS;
-
 import java.util.Scanner;
 
 class decodeKeyboard {

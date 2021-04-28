@@ -4,6 +4,7 @@ class alphPattern {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     int n = s.nextInt();
+    s.close();
     String alp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     int k = 0;
     for (int i = 0; i < n; i++) {
