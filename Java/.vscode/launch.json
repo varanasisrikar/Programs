@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch shuffleString",
+      "request": "launch",
+      "mainClass": "shuffleString",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "Launch alphPattern",
+      "request": "launch",
+      "mainClass": "alphPattern",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "Launch Binexp",
+      "request": "launch",
+      "mainClass": "Binexp",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
+      "name": "Launch Reversort",
+      "request": "launch",
+      "mainClass": "Reversort",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
       "name": "Launch cardWin",
       "request": "launch",
       "mainClass": "FS.cardWin",
