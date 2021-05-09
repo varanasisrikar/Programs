@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch nearestHeight",
+      "request": "launch",
+      "mainClass": "nearestHeight",
+      "projectName": "Java_5b2ba771"
+    },
+    {
+      "type": "java",
       "name": "Launch shuffleString",
       "request": "launch",
       "mainClass": "shuffleString",
