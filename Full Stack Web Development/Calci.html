@@ -1,165 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <style>
-        table,td
-        {
+      table,
+      td {
+        border: 5px solid black;
+        border-collapse: collapse;
+      }
 
-            border: 5px solid black;
-            border-collapse: collapse;
-        }
-        
-        td
-        {
+      td {
+        background-color: rgb(77, 72, 72);
+        padding: 20px;
+      }
 
-            background-color: rgb(77, 72, 72);
-            padding: 20px;
-        }
-        button
-        {
-            font-size: medium;
-            background-color: rgb(77, 72, 72);
-            color: white;
+      button {
+        font-size: medium;
+        background-color: rgb(77, 72, 72);
+        color: white;
+      }
 
-        }
-        
-        .form 
-        {
-            margin-left: 530px;
-            margin-bottom: 20px;
-            width: 210px;
-	    }
-        
-        .form input
-        {
-            border: 5px solid black;
-            width: 350px;
-            height: 50px;
-            font-size: large;
-            text-align: right;
-            float:center
-        }
-        body
-        {
-            border: 50px solid black;
-        }
+      .form {
+        margin-left: 473px;
+        margin-bottom: 20px;
+        width: 210px;
+        float: center;
+      }
+
+      .form input {
+        border: 5px solid black;
+        width: 350px;
+        height: 50px;
+        font-size: large;
+        text-align: right;
+        float: center;
+      }
+
+      body {
+        border: 50px solid black;
+      }
     </style>
     <script>
-        function f(i)
-        {
-            var s = document.getElementById('inp').value;
-            document.getElementById('inp').value = s+i; // displays the sum value in the Sum field
-        }
-        
-        function c()
-        {
-            document.getElementById('inp').value = "";
-        }
-        
-        function equals()
-        {
-            var s = document.getElementById('inp').value;
-            
-            for (var i = 0; i<s.length; i++)
-            {
-                if (s[i] == '+' || s[i] == '-' || s[i] == '*' || s[i] == '/')
-                {
-                    break;
-                }
-            }
-            var x = parseInt(s.substring(0,i));
-            var y = parseInt(s.substring(i+1));
-            var operator = s.substring(i,i+1);
-    
-            if (operator == '+')
-            {
-                document.getElementById('inp').value = s+" = "+(x+y); // displays the sum value in the Sum field
-            }
-            if (operator == '-')
-            {
-                document.getElementById('inp').value = s+" = "+(x-y); // displays the sum value in the Sum field
-            }
-            if (operator == '*')
-            {
-                document.getElementById('inp').value = s+" = "+(x*y); // displays the sum value in the Sum field
-            }
-            if (operator == '/')
-            {
-                document.getElementById('inp').value = s+" = "+(x/y); // displays the sum value in the Sum field
-            }
-        }
+      function f(i) {
+        var s = document
+          .getElementById('inp')
+          .value;
+        document
+          .getElementById('inp')
+          .value = s + i; // displays the sum value in the Sum field
+      }
 
+      function c() {
+        document
+          .getElementById('inp')
+          .value = "";
+      }
+
+      function equals() {
+        var s = document
+          .getElementById('inp')
+          .value;
+
+        for (var i = 0; i < s.length; i++) {
+          if (s[i] == '+' || s[i] == '-' || s[i] == '*' || s[i] == '/') {
+            break;
+          }
+        }
+        var x = parseInt(s.substring(0, i));
+        var y = parseInt(s.substring(i + 1));
+        var operator = s.substring(i, i + 1);
+
+        if (operator == '+') {
+          document
+            .getElementById('inp')
+            .value = s + " = " + (
+          x + y); // displays the sum value in the Sum field
+        }
+        if (operator == '-') {
+          document
+            .getElementById('inp')
+            .value = s + " = " + (
+          x - y); // displays the sum value in the Sum field
+        }
+        if (operator == '*') {
+          document
+            .getElementById('inp')
+            .value = s + " = " + (
+          x * y); // displays the sum value in the Sum field
+        }
+        if (operator == '/') {
+          document
+            .getElementById('inp')
+            .value = s + " = " + (
+          x / y); // displays the sum value in the Sum field
+        }
+      }
     </script>
-</head>
-<body>
-    
-    <h1 align = "center"><emp><u>Calculator</u></emp></h1>
-    <div class = "form">
-    <input type = "text" name = "enter_val" id = "inp">
-    </div>  
-    <br>
-  
-    <table align="center">
-        <tr>
-            <td>
-                <button onclick="f(7)">7</button>
-            </td>
-            <td>
-                <button onclick="f(8)">8</button>
-            </td>
-            <td>
-                <button onclick="f(9)">9</button>
-            </td>
-            <td>
-                <button onclick= "f('-')">-</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button onclick="f(4)">4</button>
-            </td>
-            <td>
-                <button onclick="f(5)">5</button>
-            </td>
-            <td>
-                <button onclick="f(6)">6</button>
-            </td>
-            <td>
-                <button onclick= "f('+')">+</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button onclick="f(1)">1</button>
-            </td>
-            <td>
-                <button onclick="f(2)">2</button>
-            </td>
-            <td>
-                <button onclick="f(3)">3</button>
-            </td>
-            <td>
-                <button onclick= "f('*')">*</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button onclick = "c()">C</button>
-            </td>
-            <td>
-                <button onclick="f(0)">0</button>
-            </td>
-            <td>
-                <button onclick="equals()">=</button>
-            </td>
-            <td>
-                <button onclick= "f('/')">/</button>
-            </td>
-        </tr>
+  </head>
 
-    
-</body>
-</html>
+  <body>
+
+    <h1 align="center">
+      <emp>
+        <u>Calculator</u>
+      </emp>
+    </h1>
+    <div align="center" class="form">
+      <input align="center" type="text" name="enter_val" id="inp">
+    </div>
+    <br>
+
+    <table align="center">
+      <tr>
+        <td>
+          <button onclick="f(7)">7</button>
+        </td>
+        <td>
+          <button onclick="f(8)">8</button>
+        </td>
+        <td>
+          <button onclick="f(9)">9</button>
+        </td>
+        <td>
+          <button onclick="f('-')">-</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="f(4)">4</button>
+        </td>
+        <td>
+          <button onclick="f(5)">5</button>
+        </td>
+        <td>
+          <button onclick="f(6)">6</button>
+        </td>
+        <td>
+          <button onclick="f('+')">+</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="f(1)">1</button>
+        </td>
+        <td>
+          <button onclick="f(2)">2</button>
+        </td>
+        <td>
+          <button onclick="f(3)">3</button>
+        </td>
+        <td>
+          <button onclick="f('*')">*</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="c()">C</button>
+        </td>
+        <td>
+          <button onclick="f(0)">0</button>
+        </td>
+        <td>
+          <button onclick="equals()">=</button>
+        </td>
+        <td>
+          <button onclick="f('/')">/</button>
+        </td>
+      </tr>
+
+    </body>
+
+  </html>
