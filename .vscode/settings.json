@@ -1,6 +1,5 @@
 {
-  "editor.fontFamily": "Raleway, 'Raleway', monospace",
-  "editor.fontSize": 16,
+  "editor.fontFamily": "JetBrains Mono, 'Courier New', monospace",
   "files.autoSave": "onWindowChange",
   "sqltools.connections": [
     {
@@ -16,5 +15,7 @@
   "C_Cpp.errorSquiggles": "Disabled",
   "sqltools.tableTreeItemsExpanded": true,
   "python.pythonPath": "C:\\Users\\varan\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-  "cmake.configureOnOpen": false
+  "cmake.configureOnOpen": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active"
 }
