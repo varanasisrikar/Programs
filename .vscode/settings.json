@@ -4,7 +4,7 @@
   "sqltools.connections": [
     {
       "database": "db",
-      "dialect": "MySQL",
+      "driver": "MySQL",
       "name": "localhost",
       "password": "MySQL",
       "port": 3306,
